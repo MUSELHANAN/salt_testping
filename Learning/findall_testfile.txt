@@ -1,0 +1,2 @@
+hlsmgsplive.mgvideo.com. 300  IN    A      64.190.62.111
+hlsmgsplive.mgvideo.com. 300   IN     A 11.22.33.44

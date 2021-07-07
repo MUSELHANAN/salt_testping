@@ -1,0 +1,16 @@
+test_run:
+  cmd.run:
+    - names:
+       - /home/postgres/pgsql/bin/psql zxin zxcdn_webcache -c "select * from authinfo_policy  where templateid like '%keyword%';"
+test_run:
+  cmd.run:
+    - names:
+       - /home/postgres/pgsql/bin/psql -U zxcdn_webcache -d zxin -tqAc "select distinct domain,ts from cache_rule where domain like '%keyword%' order by domain;"
+test_run:
+  cmd.run:
+    - names:
+       - /home/postgres/pgsql/bin/psql zxin zxcdn_slb -c  "select distinct domain,isdownloadok from certificate_cfg where domain like '%keyword%' order by domain;" 
+test_run:
+  cmd.run:
+    - names:
+       - /home/postgres/pgsql/bin/psql zxin zxcdn_webcache -c "select * from domain_service_list  where pattern like '%keyword%';"

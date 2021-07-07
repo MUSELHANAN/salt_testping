@@ -1,0 +1,22 @@
+          ID: test_run
+    Function: cmd.run
+        Name: /home/postgres/pgsql/bin/psql -U zxcdn_webcache -d zxin -tqAc "select distinct domain,ts from cache_rule where domain like '%mgtv%' order by domain;"
+      Result: True
+     Comment: Command "/home/postgres/pgsql/bin/psql -U zxcdn_webcache -d zxin -tqAc "select distinct domain,ts from cache_rule where domain like '%mgtv%' order by domain;"" run
+     Started: 10:13:28.781232
+    Duration: 10.992 ms
+     Changes:   
+              ----------
+              pid:
+                  30009
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  disp.titan.mgtv.com|2021-04-28 00:39:19
+                  pcdowncmnet.titan.mgtv.com|2021-04-28 00:39:19
+                  pcdowncmnetzte.titan.mgtv.com|2021-04-28 00:39:19
+                  pcvideocmnet.titan.mgtv.com|2021-04-28 00:39:19
+                  pcvideocmnetzte.titan.mgtv.com|2021-04-28 00:39:19
+                  pcvideocmnetzte-v6.titan.mgtv.com|2021-04-28 00:39:19
+----------
